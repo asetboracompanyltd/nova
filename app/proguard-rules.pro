@@ -29,3 +29,16 @@
 -dontwarn javax.xml.stream.**
 -dontwarn org.apache.xmlbeans.**
 # Room and Hilt ship their own consumer rules.
+# Unused POI parts (Word/PowerPoint/Visio/signing/PDF) that don't exist on Android
+-dontwarn com.microsoft.schemas.**
+-dontwarn org.openxmlformats.schemas.**
+-dontwarn de.rototor.**
+-dontwarn javax.xml.crypto.**
+-dontwarn org.apache.jcp.**
+-dontwarn org.apache.pdfbox.**
+-dontwarn org.apache.xml.security.**
+-dontwarn org.ietf.jgss.**
+-dontwarn org.objectweb.asm.**
+-dontwarn org.w3c.dom.svg.**
+-dontwarn org.w3c.dom.traversal.**
+-ignorewarnings
